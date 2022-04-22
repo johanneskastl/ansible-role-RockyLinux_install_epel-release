@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'RockyLinux_install_epel-release'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Install the epel-release package on RockyLinux'
   company: 'B1 Systems GmbH'
