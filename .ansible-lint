@@ -1,0 +1,6 @@
+warn_list:
+  - schema[meta]
+skip_list:
+  - role-name
+  - schema[meta]
+  - command-instead-of-module
