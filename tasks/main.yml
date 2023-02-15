@@ -6,7 +6,7 @@
     state: 'present'
   when: 'ansible_distribution == "Rocky"'
   notify:
-    - "run 'dnf makecache'"
+    - "Run 'dnf makecache'"
 
 - name: 'RockyLinux - install epel-release key'
   rpm_key:

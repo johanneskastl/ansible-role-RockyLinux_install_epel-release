@@ -1,7 +1,7 @@
 ---
 # RockyLinux_install_epel-release/handlers/main.yml
 
-- name: "run 'dnf makecache'"
+- name: "Run 'dnf makecache'"
   command: 'dnf makecache'
   when:
     - 'ansible_distribution == "Rocky"'
