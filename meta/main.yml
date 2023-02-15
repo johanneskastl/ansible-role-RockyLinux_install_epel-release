@@ -10,10 +10,10 @@ galaxy_info:
   min_ansible_version: '2.12'
 
   platforms:
-  # EL includes RHEL, CentOS, RockyLinux, AlmaLinux etc.
-  - name: EL
-    versions:
-    - 8
+    # EL includes RHEL, CentOS, RockyLinux, AlmaLinux etc.
+    - name: EL
+      versions:
+        - '8'
 
   galaxy_tags: []
 
