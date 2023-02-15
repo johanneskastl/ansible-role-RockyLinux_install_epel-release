@@ -2,13 +2,13 @@
 # RockyLinux_install_epel-release/handlers/main.yml
 
 - name: 'RockyLinux - install epel-release key'
-  rpm_key:
+  ansible.builtin.rpm_key:
     key: '/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}'
     state: 'present'
   when:
     - 'ansible_distribution == "Rocky"'
 
 - name: "Run 'dnf makecache'"
-  command: 'dnf makecache'
+  ansible.builtin.command: 'dnf makecache'
   when:
     - 'ansible_distribution == "Rocky"'
