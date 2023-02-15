@@ -9,4 +9,5 @@
     - 'RockyLinux - install epel-release key'
     - "Run 'dnf makecache'"
 
-- meta: flush_handlers
+- name: 'Flush handlers'
+  ansible.builtin.meta: flush_handlers
