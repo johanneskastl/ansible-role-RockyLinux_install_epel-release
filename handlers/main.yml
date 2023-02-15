@@ -3,4 +3,5 @@
 
 - name: "run 'dnf makecache'"
   command: "dnf makecache"
-  when: 'ansible_distribution == "Rocky"'
+  when:
+    - 'ansible_distribution == "Rocky"'
